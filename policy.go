@@ -3,7 +3,6 @@ package main
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"os"
 
@@ -47,7 +46,7 @@ func putPolicy() {
 		log.Error(err)
 	}
 	defer resp.Body.Close()
-	fmt.Println("Policy is Created ...")
+	log.Info("Policy is Created ...")
 }
 func main() {
 	config := &api.Config{
