@@ -39,8 +39,8 @@ func putPolicy() {
 	if err != nil {
 		log.Error(err)
 	}
-	//req.Header.Set("Content-Type", "application/json")
-	//req.Header.Set("X-Vault-Token", token)
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("X-Vault-Token", token)
 
 	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
