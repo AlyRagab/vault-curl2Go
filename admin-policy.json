@@ -1,0 +1,8 @@
+{
+    "name": "dev",
+    "path": {
+        "*":{
+            "capabilities": ["create", "read" , "update", "delete" , "list"]
+        }
+    }
+}
